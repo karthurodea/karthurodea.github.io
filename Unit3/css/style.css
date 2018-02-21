@@ -1,6 +1,31 @@
 body {
-	background: url("../images/Odeaname.jpg");
+	background: url("../images/CloudGif.jpeg");
 	background-size: cover;
-	text-align: center;
 }
 
+#slogan {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+ul {
+	list-style-type: none;
+	color: #ffffff;
+}
+
+#main-nav {
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+p {
+	color: #ffffff;
+}
