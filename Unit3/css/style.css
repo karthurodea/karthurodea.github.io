@@ -31,15 +31,12 @@ p {
 }
 
 #headshot {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	position: center;
+
 }
 
-#timeline {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.imgframe {
+	background: #07290C;
+	padding: 12px;
+	border: 1px solid #ffffff;
 }
