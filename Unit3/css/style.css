@@ -1,5 +1,5 @@
 body {
-	background: url("../images/resume.jpeg");
+	background: url("../images/shiplap.jpeg");
 	background-size: cover;
 }
 
@@ -12,24 +12,24 @@ body {
 
 h1 {
 	text-align: center;
-	color: #114761;
+	color: #000000;
 	border-radius: 10px;
 	font-size: 48px;
 }
 
 ul {
 	list-style-type: none;
-	color: #114761;
+	color: #000000;
 }
 
 #main-nav {
 	text-align: center;
 	text-transform: uppercase;
-	color: #114761;
+	color: #000000;
 }
 
 p {
-	color: #114761;
+	color: #000000;
 }
 
 #headshot {
