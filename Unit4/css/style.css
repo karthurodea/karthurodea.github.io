@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento|Handlee')
+
+/* Elements */
+
+
+body {
+	background: url("../images/corkboard.jpg");
+	background-size: cover;
+}
+
+
+p {
+	color: #000000;
+	line-height: 1.5em;
+	font-size: 18px;
+	font-family: 'Fondamento', cursive;
+}
+
+
+a {
+	font-family: 'Fondamento', cursive;
+}
+
+
+h1 {
+	font-family: 'Handlee', cursive;
+	font-size: 48px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: -5px;
+	margin-top: -5px;
+}
+
+
+ul {
+	list-style-type: none;
+	color: #000000;
+	font-family: 'Fondamento', cursive;
+}
+
+
+li {
+	display: inline;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+/* Classes */
+
+
+.imgframe {
+	background: #000000;
+	padding: 5px;
+	margin-top: 5px;
+	border: 1px solid #ffffff;
+}
+
+
+.hero {
+	text-align: center;
+	width: 85%;
+	padding-top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px double #000000;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+/* IDs */
+
+#slogan {
+	font-family: 'Fondamento', cursive;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+#main-nav {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+}
+
+
+#headshot {
+	position: center;
+}
+
+#skills {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+
+}
