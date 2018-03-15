@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script')
+
+/* Elements */
+
+body {
+
+}
+
+header {
+	background: url("../images/Bulletinboard.jpg");
+	border: 3px double #000000;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+nav {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FFFFA5;
+	border: 1px black solid;
+	float: right;
+    width: 25%;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+
+p {
+	color: #000000;
+	line-height: 1.5em;
+	font-size: 18px;
+	font-family: chalkduster, fantasy;
+}
+
+
+a {
+	font-family: chalkduster, fantasy;
+	color: #3366BB;
+}
+
+
+h1 {
+	font-family: chalkduster, fantasy;
+	font-size: 48px;
+	text-align: center;
+	color: #ffffff;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: -5px;
+	margin-top: -5px;
+}
+
+h2 {
+	font-family: chalkduster, fantasy;
+	font-size: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: -5px;
+	margin-top: -5px;
+	padding-top: 5px;
+}
+
+h3 {
+	font-family: chalkduster, fantasy;
+	font-size: 18px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: -5px;
+	margin-top: -5px;
+	padding-top: 5px;
+}
+
+ul {
+	list-style-type: none;
+	color: #000000;
+	font-family: chalkduster, fantasy;
+}
+
+
+li {
+	display: inline;
+}
+
+img{
+	max-width: 100%;
+}
+
+footer {
+	background: url("../images/Bulletinboard.jpg");
+	border: 3px double #000000;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+
+/* Classes */
+
+.imgframe {
+	background: #000000;
+	padding: 5px;
+	margin: 0 auto;
+	border: 2px solid #ffffff;
+}
+
+
+.hero {
+	text-align: center;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px double #000000;
+	background: url("../images/Bulletinboard.jpg");
+}
+
+.strong {
+	font-weight: bold;
+	padding: 1em;
+}
+
+.sections{
+	border: 3px double #000000;
+	background: url("../images/Bulletinboard.jpg");
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.logo {
+	color: #000000;
+	font-family: chalkduster, fantasy;
+	background-color: #FFFFA5;
+    border: 1px black solid;
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix img {
+	display: block;
+
+}
+
+
+/* IDs */
+
+#two_column {
+    background: url("../images/Bulletinboard.jpg");
+    border: 1px black solid;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#two_column1 {
+    background: url("../images/Bulletinboard.jpg");
+    border: 1px black solid;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#left {
+    background-color: #FFFFA5;
+    border: 1px black solid;
+    padding: 30px 20px 30px 20px;
+    float: left;
+    width: 35%;
+    text-align: center;
+    box-shadow: -10px 10px #000000;
+}
+
+#left_1 {
+    background-color: #FFFFA5;
+    border: 1px black solid;
+    padding: 30px 20px 30px 20px;
+    float: left;
+    width: 35%;
+    text-align: center;
+    box-shadow: -10px 10px #000000;
+}
+
+#right {
+    background-color: #FFFFA5;
+    border: 1px black solid;
+    padding: 30px 20px 20px 20px;
+    float: right;
+    width: 35%;
+    text-align: center;
+    box-shadow: -10px 10px #000000;
+}
+
+#right_1 {
+    background-color: #FFFFA5;
+    border: 1px black solid;
+    padding: 30px 20px 20px 20px;
+    float: right;
+    width: 35%;
+    text-align: center;
+    box-shadow: -10px 10px #000000;
+}
+
+#site-nav {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#homepage-nav {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+}
+
+#headshot {
+	position: center;
+}
+
+#qas-skills {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+
+}
+
+#bowdoin-skills {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+
+}
+
+#college-skills {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	width: 100%;
+
+}

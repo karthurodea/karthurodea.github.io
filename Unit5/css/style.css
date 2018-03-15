@@ -21,6 +21,10 @@ nav {
 	border: 3px double #000000;
 }
 
+a:hover {
+	background-color: #FFED74;
+}
+
 
 p {
 	color: #000000;
@@ -78,14 +82,6 @@ footer {
 
 
 /* Classes */
-
-.sticky {
-	background: url("../images/Sticky.png");
-	background-repeat: no-repeat;
-	float: none;
-	width: 24%;
-	padding-top: 25px;
-}
 
 .imgframe {
 	background: #000000;
