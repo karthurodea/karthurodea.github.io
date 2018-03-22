@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script')
-
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Shadows+Into+Light');
 /* Elements */
-
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-
+	font-family: 'Nanum Pen Script', cursive;
+	line-height: 1.5;
+	font-size: 20px;
 }
 
 header {
-	background: #ffffff;
-	padding: 100px;
 	margin-bottom: 20px;
 }
 
 nav {
-	display: block;
 	text-align: center;
 	text-transform: uppercase;
 	background-color: #FFFFA5;
@@ -26,54 +24,32 @@ nav {
 
 
 p {
-	color: #000000;
-	line-height: 1.5em;
-	font-size: 18px;
-	font-family: chalkduster, fantasy;
-	padding-top: 5px;
+	margin-top: 1em;
 }
 
 
 a {
-	font-family: chalkduster, fantasy;
 	color: #3366BB;
 }
 
 
 h1 {
-	font-family: chalkduster, fantasy;
 	font-size: 48px;
 	text-align: center;
-	color: #000000;
-	padding: 10px 10px 10px 10px;
-	margin-bottom: -5px;
-	margin-top: -5px;
 }
 
 h2 {
-	font-family: chalkduster, fantasy;
 	font-size: 24px;
 	text-align: center;
-	color: #000000;
-	margin-bottom: -5px;
-	margin-top: -5px;
-	padding-top: 5px;
 }
 
 h3 {
-	font-family: chalkduster, fantasy;
 	font-size: 18px;
 	text-align: center;
-	color: #000000;
-	margin-bottom: -5px;
-	margin-top: -5px;
-	padding-top: 5px;
 }
 
 ul {
 	list-style-type: none;
-	color: #000000;
-	font-family: chalkduster, fantasy;
 }
 
 
@@ -82,7 +58,6 @@ li {
 }
 
 img{
-	max-width: 100%;
 }
 
 footer {
@@ -96,19 +71,14 @@ footer {
 /* Classes */
 
 .imgframe {
-	background: #000000;
 	padding: 5px;
 	margin: 0 auto;
 	border: 2px solid #ffffff;
 }
 
 .circle {
-    background-color:#000000;
-    border: 2px solid black;    
-    height: 115px;
+    border: 2px solid black;
     border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
     width: 115px;
 }
 
@@ -135,13 +105,9 @@ footer {
 }
 
 .logo {
-	color: #000000;
-	font-family: chalkduster, fantasy;
 	background-color: #FFFFA5;
     border: 1px black solid;
     float: left;
-    width: 10%;
-    text-align: center;
 }
 
 .clearfix:after {
@@ -170,7 +136,6 @@ footer {
 .skills {
 	text-align: center;
 	text-transform: uppercase;
-	color: #000000;
 	width: 100%;
 	padding: 10px 10px 10px 10px;
 
@@ -219,7 +184,8 @@ footer {
     border: 1px black solid;
     padding: 30px 20px 30px 20px;
     float: left;
-    width: 35%;
+    width: 46%;
+    margin: 2%;
     text-align: center;
     box-shadow: -10px 10px #000000;
 }
@@ -296,58 +262,41 @@ footer {
 
 #center {
     background-color: #FFFFA5;
-    border: 1px black solid;
     padding: 30px 20px 20px 20px;
     margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
     width: 35%;
     text-align: center;
-    box-shadow: -10px 10px #000000;
+    transform: rotate(1deg);
+    box-shadow: -2px 2px 4px rgba(0,0,0,.35);
+    box-shadow: 4px 4px 8px rgba(0,0,0,.4);
 }
 
 #nav_left {
-    padding: 5px 5px 5px 5px;
-    float: left;
-    width: 10%;
+    display: inline-block;
     text-align: center;
-    margin-top: 50px;
-
 }
 
-#nav_center {
-    padding: 30px 20px 30px 20px;
-    margin-left: auto;
-	margin-right: auto;
-    width: 70%;
-    text-align: center;
-
-}
+#nav_center {display: inline-block;}
 
 #nav_right {
     padding: 10px 5px 10px 5px;
     float: right;
-    width: 15%;
     text-align: center;
-    margin-top: -75px;
-
 }
 
 #site-nav {
 	text-align: center;
 	text-transform: uppercase;
-	color: #000000;
-	width: 100%;
 	margin-bottom: 1em;
 }
 
 #homepage-nav {
 	text-align: center;
 	text-transform: uppercase;
-	color: #000000;
-	width: 100%;
 	padding-bottom: 10px;
 }
-
-#headshot {
-	position: center;
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
 }
