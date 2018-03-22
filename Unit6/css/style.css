@@ -8,8 +8,8 @@ body {
 
 header {
 	background: #ffffff;
-	padding: 20px;
-	margin-bottom: 10px;
+	padding: 100px;
+	margin-bottom: 20px;
 }
 
 nav {
@@ -126,7 +126,7 @@ footer {
 	padding: 1em;
 }
 
-.sections{
+.sections {
 	border: 3px double #000000;
 	background: url("../images/Bulletinboard.jpg");
 	width: 100%;
@@ -172,6 +172,7 @@ footer {
 	text-transform: uppercase;
 	color: #000000;
 	width: 100%;
+	padding: 10px 10px 10px 10px;
 
 }
 
