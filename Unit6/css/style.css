@@ -7,7 +7,7 @@ body {
 }
 
 header {
-	background: url("../images/Bulletinboard.jpg");
+	background: #ffffff;
 	border: 3px double #000000;
 	padding: 20px;
 	margin-bottom: 10px;
