@@ -135,7 +135,7 @@ footer {
 }
 
 .two_column {
-    background: url("../images/Bulletinboard.jpg");
+    background: url("../images/corkboardwall.jpg");
     border: 1px black solid;
     padding: 10px;
     margin: auto;
@@ -166,28 +166,28 @@ footer {
 /* IDs */
 
 #two_column1 {
-    background: url("../images/Bulletinboard.jpg");
+    background: url("../images/corkboardwall.jpg");
     border: 1px black solid;
     padding: 20px;
     margin-bottom: 10px;
 }
 
 #two_column2 {
-    background: url("../images/Bulletinboard.jpg");
+    background: url("../images/corkboardwall.jpg");
     border: 1px black solid;
     padding: 20px;
     margin-bottom: 10px;
 }
 
 #two_column3 {
-    background: url("../images/Bulletinboard.jpg");
+    background: url("../images/corkboardwall.jpg");
     border: 1px black solid;
     padding: 20px;
     margin-bottom: 10px;
 }
 
 #one_column {
-    background: url("../images/Bulletinboard.jpg");
+    background: url("../images/corkboardwall.jpg");
     border: 1px black solid;
     padding: 20px;
     margin-bottom: 10px;
