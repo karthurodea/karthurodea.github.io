@@ -5,7 +5,8 @@
 body {
 	font-family: 'Nanum Pen Script', cursive;
 	line-height: 1.5;
-	font-size: 20px;
+	font-size: 24px;
+    border: 1px black solid;
 }
 
 header {
@@ -26,6 +27,7 @@ nav {
 
 p {
 	margin-top: 1em;
+    padding: 1px;
 }
 
 
@@ -55,7 +57,8 @@ ol {
 
 
 li {
-	display: inline;
+	display: inline-block;
+
 }
 
 img{
@@ -80,7 +83,8 @@ footer {
 .circle {
     border: 2px solid black;
     border-radius: 50%;
-    width: 115px;
+    width: 125px;
+    margin: 75px;
 }
 
 .hero {
@@ -94,7 +98,6 @@ footer {
 
 .strong {
 	font-weight: bold;
-	padding: 1em;
 }
 
 .logo {
@@ -128,11 +131,44 @@ footer {
 .wrapper {
     max-width: 1400px;
     margin: auto;
+    padding: 5px;
 }
 
 .inner_wrapper {
     max-width: 425px;
 }
+
+.inner_header_wrapper {
+    min-width: 425px;
+    min-height: 400px;
+    float: left;
+    margin: 10px;
+
+}
+
+.header_wrapper {
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.polaroid {
+    background: url("../images/polaroid.png");
+    background-repeat: no-repeat;
+    transform: rotate(3deg);
+}
+
+.notecard {
+    background: url("../images/Notecard.jpg");
+    background-repeat: no-repeat;
+    border: .5px gray solid;
+    width: 375px;
+    height: 225px;
+    padding-top: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 .two_column {
     background: url("../images/corkboardwall.jpg");
@@ -163,7 +199,9 @@ footer {
     box-shadow: 5px 5px 9px rgba(0,0,0,.5);
 }
 
+
 /* IDs */
+
 
 #two_column1 {
     background: url("../images/corkboardwall.jpg");
@@ -186,12 +224,6 @@ footer {
     margin-bottom: 10px;
 }
 
-#one_column {
-    background: url("../images/corkboardwall.jpg");
-    border: 1px black solid;
-    padding: 20px;
-    margin-bottom: 10px;
-}
 
 #left_1 {
     background-color: #FFFFA5;
@@ -278,27 +310,9 @@ footer {
     box-shadow: 4px 4px 8px rgba(0,0,0,.4);
 }
 
-#nav_left {
-    display: inline-block;
-    text-align: center;
-}
-
-#nav_center {display: inline-block;}
-
-#nav_right {
-    padding: 10px 5px 10px 5px;
-    float: right;
-    text-align: center;
-}
 
 #site-nav {
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 1em;
-}
-
-#homepage-nav {
-	text-align: center;
-	text-transform: uppercase;
-	padding-bottom: 10px;
 }

@@ -5,46 +5,54 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <!-- So it begins ... -->
+
 <body>
 	
-	<header class="clearfix">
-		<img id="nav_left" class="circle" src="images/headshot1.png" alt="Head Shot">
-		<h1 id="nav_center">Kevin Arthur O'Dea<br><br>33 Years And Counting . . .</h1>
-		<nav id="nav_right">
-			<a href="https://www.linkedin.com/in/kevinaodea/" class="strong">Connect</a> 
-			<a href="#" class="strong">Coffee</a> 
-			<a href="#" class="strong">Contact</a>
-		</nav>
+	<header class="header_wrapper clearfix">
+		<div class="inner_header_wrapper polaroid">
+			<img class="circle" src="images/headshot1.png" alt="Head Shot">
+		</div>
+		<div class="inner_header_wrapper">
+			<h1>Kevin Arthur O'Dea<br>33 Years And Counting . . .</h1>
+		</div>
+		<div class="inner_header_wrapper">
+			<nav>
+				<a href="https://www.linkedin.com/in/kevinaodea/" class="strong">Connect</a> 
+				<a href="#" class="strong">Coffee</a> 
+				<a href="#" class="strong">Contact</a>
+			</nav>
+		</div>
 	</header>
 
 <main>
 	
-	<section>
-	<ul id="homepage-nav">
-		<li class="strong">1985 - 2002</li> |
-		<li class="strong">2003 - 2007</li> |
-		<li class="strong">2008 - Present</li>
-	</ul>
+	<section class="wrapper clearfix">
+			<ul class="notecard">
+				<li class="strong"><a href="#child">1985 - 2002</li> 
+				<li class="strong"><a href="#teenager">2003 - 2007</li> 
+				<li class="strong"><a href="#adult">2008 - Today</li>
+			</ul>
 	</section>
 	
 	<section class="two_column clearfix">
-		<h2>MCMLXXXV - MMII</h2>
+		<h2 id="child">MCMLXXXV - MMII</h2>
 		<div class="wrapper">
 		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/Vermont.jpg" alt="Welcome to Vermont">
-		<p>I grew up in Arlington, Vermont, a town with just over 2300 people.  Our claim to fame is an association with <a href="https://www.biography.com/people/norman-rockwell-37249">Norman Rockwell,</a>who lived in Arlington from 1939-1953. Between the ages of 10 and 18 I spent all my time playing soccer, basketball, and baseball. I wish I could weave together a more interesting series of events, but as the seasons changed I transitioned from one sport to the next.</p>
+		<p>I grew up in Arlington, Vermont, a town with just over 2300 people. Our claim to fame is an association with <a href="https://www.biography.com/people/norman-rockwell-37249">Norman Rockwell,</a>who lived in Arlington from 1939-1953.</p><p>Between the ages of 10 and 18 I spent all my time playing soccer, basketball, and baseball. I wish I could weave together a more interesting series of events, but as the seasons changed I transitioned from one sport to the next.</p>
 		</div>
 		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/Jobs.jpg" alt="My Employers">
-		<p>My parents stopped funding my social escapades when I entered high school, so I started working on the weekends.  Luckily, the town of Manchester was only a ten minute car ride from Arlington.  At 14 I tried caddying, and got pissed about sitting in a shack for four hours without getting paid. At 15 I folded clothes at Brooks Brothers for a dazzling $8/hr.  At 16 I hit the jackpot as a food artist at Bagel Works (now The Works Bakery and Cafe).</p>
+		<p>My parents stopped funding my social escapades when I entered high school, so I started working on the weekends.  Luckily, the town of Manchester was only a ten minute car ride from Arlington.  At 14 I tried caddying, and got pissed about sitting in a shack for four hours without getting paid. At 15 I folded clothes at Brooks Brothers for a dazzling $8/hr. At 16 I hit the jackpot as a food artist at Bagel Works (now The Works Bakery and Cafe).</p>
 		</div>
 		<div class="inner_wrapper pink_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
+		<h2>Skills Acquired</h2>
 		<ol>
-			<li class="strong">Skills Acquired:</li>
 			<li>Critical Thinking</li>
 			<li>Communication</li>
 			<li>Collaboration</li>
@@ -63,7 +71,7 @@
 	</section>
 
 	<section class="two_column clearfix">
-		<h2>MMIII-MMVII</h2>
+		<h2 id="teenager">MMIII-MMVII</h2>
 		<div class="wrapper">
 		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
@@ -77,8 +85,8 @@
 		</div>
 		<div class="inner_wrapper pink_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
+		<h2>Skills Acquired</h2>
 		<ol>
-			<li class="strong">Skills Acquired:</li>
 			<li>Critical Thinking</li>
 			<li>Communication</li>
 			<li>Collaboration</li>
@@ -96,11 +104,22 @@
 	</ul>
 	</section>
 
-	<section id="one_column" class="clearfix">
-		<div id="center">
+	<section class="two_column clearfix">
+		<div class="wrapper">
+		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/EDQ.png" alt="Experian Data Quality">
 		<p>I graduated from Holy Cross with a degree in English, and spent the next five months living with my aunt and uncle in Chelmsford seeking employment. My first employer - <a href="https://www.edq.com/">Experian QAS</a> - tapped my formal understanding of the English language, paying me to sell mailing address validation software to local, state, and federal government agencies in Texas, Oklahoma, Louisiana, and Arkansas. After a couple months of gainful employment, I moved to Allston and rented an apartment with a college roommate. I consider this a transitional moment in my history, moving from the comfort and security of living with family, to the struggle of independence, and a paycheck-to-paycheck modus operandi.</p>
+		</div>
+		<div class="inner_wrapper pink_post_it">
+		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
+		<h2>Skills Acquired</h2>
+		<ol>
+			<li>Critical Thinking</li>
+			<li>Communication</li>
+			<li>Collaboration</li>
+		</ol>
+		</div>
 		</div>
 	</section>
 	
@@ -113,13 +132,24 @@
 	</ul>
 	</section>
 
-	<section id="one_column" class="clearfix">
-		<div id="center">
+	<section class="two_column clearfix">
+		<div class="wrapper">
+		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/bowdoingroup.jpg" alt="Bowdoin Group">
 		<p>Whilst employed at Experian I relocated from Allston to Charlestown, and shared an excellent two-bedroom with a new roommate (a friend of a friend).  Shortly after the reloaction I parted ways with Experian and software sales, and got my first and last taste of contract staffing at <a href="https://www.bowdoingroup.com/">Bowdoin Group</a>. I started at BG in January 2009, and left BG in January 2010.</p>
 		</div>
-		</section>
+		<div class="inner_wrapper pink_post_it">
+		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
+		<h2>Skills Acquired</h2>
+		<ol>
+			<li>Critical Thinking</li>
+			<li>Communication</li>
+			<li>Collaboration</li>
+		</ol>
+		</div>
+		</div>
+	</section>
 	
 	<section class="skills">
 	<ul>
@@ -130,17 +160,28 @@
 	</ul>
 	</section>
 
-	<section id="two_column2" class="clearfix">
-		<h2>MMVIII - Present</h2>
-		<div id="left_2">
+<section class="two_column clearfix">
+		<h2 id="adult">MMVIII-MMXVIII</h2>
+		<div class="wrapper">
+		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/forrester.png" alt="Forrester Research">
 		<p>When I left the Bowdoin Group I was concerned the last year had been a waste.  However, the time I spent cold-calling and pushing past frequent rejection became a valuable asset.  I worked my way through the interview process at <a href="https://go.forrester.com/">Forrester Research</a> and received an offer to work in their account management department.  One of the people on the interview panel at Forrester came from the staffing world, and I think my experience at the Bowdoin Group was a big driver in the decision to offer me the job.  The role was supporting two senior account directors and the ~20 enterprise clients they managed.</p>
 		</div>
-		<div id="right_2">
+		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/Waltham.png" alt="Welcome to Waltham">
 		<p>The transition from The Bowdoin Group to Forrester coincided with an address change.  I moved out of Charlestown and into Waltham with a new rooomate (who went on to become my wife Briana) and a desire to reduce living expenses.  Bri and I met through mutual friends in 2009; we moved in together in 2010; we got married in 2012; we welcomed a daughter, Audrey, in 2015; and later this year we're expecting Audrey's first sibling.</p>
+		</div>
+		<div class="inner_wrapper pink_post_it">
+		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
+		<h2>Skills Acquired</h2>
+		<ol>
+			<li>Critical Thinking</li>
+			<li>Communication</li>
+			<li>Collaboration</li>
+		</ol>
+		</div>
 		</div>
 	</section>
 
@@ -153,37 +194,39 @@
 	</ul>
 	</section>
 
-	<section id="two_column3" class="clearfix">
-		<div id="left_3">
+	<section class="two_column clearfix">
+		<div class="wrapper">
+		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/hubspotlogo.png" alt="Welcome to HubSpot">
 		<p>Working at Forrester was excellent.  I was exposed to so many smart people, and an enormous library of high quality research and data.  To this day I have a great deal of respect for each manager and account director for whom I worked.  The decision to leave was not driven by a desire to leave Forrester; it was <a href="https://www.hubspot.com/">HubSpot's</a> appeal as a fast-growing tech company, and the opportunity to learn the ins and outs of a budding marketing automation platform.  I left Forrester at the end of June 2014, and started at HubSpot a week later on July 7th.</p>
 		</div>
-		<div id="right_3">
+		<div class="inner_wrapper yellow_post_it">
 		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
 		<img class="imgframe" src="images/102WhitcombAve.png" alt="Welcome to Littleton">
 		<p>I remain happily employed at HubSpot today, and <a href="https://karthurodea.github.io/Unit6/index.html">this website</a> is one example of the rewarding work experience.  HubSpot is covering the cost of my participation in GA's HTML/CSS circuit, and this is just one example of the many perks of being an employee.  Another is stock options, and stock units, which have helped Bri and I purchase our first home in Littleton.  I'm sitting in my home office finishing this final paragraph, looking fondly back at the last ~33 years, and looking eagerly ahead at the next.</p>
 		</div>
+		<div class="inner_wrapper pink_post_it">
+		<img src="images/pin.svg" viewBox="0 0 60 55" width="75" height="50" alt="Pushpin">
+		<h2>Skills Acquired</h2>
+		<ol>
+			<li>Customer Retention</li>
+			<li>Business Planning</li>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ol>
+		</div>
+		</div>
 	</section>
 
-	<section class="skills">
-	<ul>
-		<li class="strong">Skills Acquired:</li>
-		<li>Customer Retention;</li>
-		<li>Strategic Business Planning;</li>
-		<li>HTML;</li>
-		<li>CSS</li>
+	<footer class="wrapper clearfix">
+	<ul class="notecard">
+		<li class="strong"><a href="#kid">1985 - 2002</li> |
+		<li class="strong"><a href="#teenager">2003 - 2007</li> |
+		<li class="strong"><a href="#adult">2008 - Today</li>
 	</ul>
-	</section>
-
-	<footer>
-	<ul id="homepage-nav">
-		<li class="strong">1985 - 2002</li> |
-		<li class="strong">2003 - 2007</li> |
-		<li class="strong">2008 - Present</li>
-	</ul>
-	<p>Icon made by Freepik from www.flaticon.com</p>
 	</footer>
+	<p>Icon made by Freepik from https://www.flaticon.com</p>
 
 </main>
 
