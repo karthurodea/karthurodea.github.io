@@ -155,17 +155,6 @@ footer {
     transform: rotate(3deg);
 }
 
-.header_notecard {
-    background: url("../images/Notecard.jpg");
-    background-repeat: no-repeat;
-    border: .5px gray solid;
-    width: 375px;
-    height: 225px;
-    padding-top: 90px;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .page_jump {
     text-transform: uppercase;
     width: 100%;
