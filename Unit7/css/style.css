@@ -13,17 +13,6 @@ header {
 	margin-bottom: 20px;
 }
 
-nav {
-	text-align: center;
-	text-transform: uppercase;
-	background-color: #FFFFA5;
-	border: 1px black solid;
-	float: right;
-    width: 25%;
-    text-align: center;
-    padding: 5px 0px 5px 0px;
-}
-
 
 p {
 	margin-top: 1em;
@@ -143,16 +132,6 @@ footer {
 
 }
 
-.wrapper {
-    max-width: 1400px;
-    margin: auto;
-    padding: 5px;
-}
-
-.inner_wrapper {
-    max-width: 425px;
-}
-
 .inner_header_wrapper {
     min-width: 425px;
     min-height: 325px;
@@ -198,15 +177,18 @@ footer {
 .two_column {
     background: url("../images/corkboardwall.jpg");
     border: 1px black solid;
-    padding: 10px;
-    margin: auto;
+    width: 100%;
+}
+
+.inner_wrapper {
+    max-width: 470px;
 }
 
 .yellow_post_it {
     background-color: #FFFFA5;
     border: 1px black solid;
     float: left;
-    margin: 10px 30px 10px 30px;
+    margin: 2% 5% 2% 5%;
     text-align: center;
     transform: rotate(3deg);
     box-shadow: 4px 4px 8px rgba(0,0,0,.5);
@@ -216,7 +198,7 @@ footer {
     background-color: #FFFFA5;
     border: 1px black solid;
     float: left;
-    margin: 10px 30px 10px 30px;
+    margin: 2% 5% 2% 5%;
     text-align: center;
     transform: rotate(-3deg);
     box-shadow: 4px 4px 8px rgba(0,0,0,.5);
@@ -226,7 +208,7 @@ footer {
     background: url("../images/Notecard.jpg");
     border: 1px black solid;
     float: left;
-    width: 410px;
+    width: 380px;
     margin-left: 10px;
     margin-top: 50px;
     padding-bottom: 30px;
@@ -238,7 +220,7 @@ footer {
     background: url("../images/Notecard.jpg");
     border: 1px black solid;
     float: left;
-    width: 410px;
+    width: 380px;
     margin-left: 10px;
     margin-top: 50px;
     padding-bottom: 30px;
