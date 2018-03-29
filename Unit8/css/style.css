@@ -222,11 +222,4 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1664px) {
-    .yellow_post_it {
-        margin: 5% 10% 5% 10%;
-    }
-    .yellow_post_it_twist {
-        margin: 5% 10% 5% 10%;
-    }
-}
+
