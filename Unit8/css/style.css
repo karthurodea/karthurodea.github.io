@@ -78,6 +78,7 @@ footer {
     text-align: center;
     font-size: .75em;
     display: inline-block;
+    padding: 10px;
 
 }
 
@@ -239,4 +240,42 @@ footer {
 
 /* Media Queries */
 
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 425px) {
+    
+.header_wrapper {
+    max-width: 425px;
+    margin: auto;
+
+}
+
+.inner_header_wrapper {
+    max-width: 425px;
+    width: 100%;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+}
+
+.polaroid {
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    position: relative;
+    padding: 0 .5em;
+}
+
+.polaroid_img {
+    width: 100%;
+}
+
+.page_jump {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+
+    }
 
