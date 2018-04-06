@@ -245,8 +245,19 @@ footer {
 
 /* Media Queries */
 
-/* On screens that are 600px wide or less, the background color is olive */
+/* On screens that are 425px wide or less, remove the floats*/
 @media screen and (max-width: 425px) {
+
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    line-height: 1.5;
+    font-size: 24px;
+    border: 1px black solid;
+}
+
+section {
+    margin: 5px 0px;
+}
 
 .two_column {
     background: url("../images/corkboardwall.jpg");
@@ -305,3 +316,74 @@ footer {
 
     }
 
+/* On screens that are 425px wide or less, remove the floats*/
+@media screen and (max-width: 1024px) {
+
+
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    line-height: 1.5;
+    font-size: 24px;
+    border: 1px black solid;
+}
+
+section {
+    margin: 10px 0px;
+}
+
+.two_column {
+    background: url("../images/corkboardwall.jpg");
+    border: 1px black solid;
+    width: 100%;
+}
+    
+.header_wrapper {
+    max-width: 425px;
+    margin: auto;
+
+}
+
+.yellow_post_it {
+    background-color: #FFFFA5;
+    border: 1px black solid;
+    margin: 2% 2% 2% 2%;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+.yellow_post_it_twist {
+    background-color: #FFFFA5;
+    border: 1px black solid;
+    margin: 2% 2% 2% 2%;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+.inner_header_wrapper {
+    max-width: 425px;
+    width: 100%;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+}
+
+.polaroid {
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    position: relative;
+    padding: 0 .5em;
+}
+
+.polaroid_img {
+    width: 100%;
+}
+
+.page_jump {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+    }
