@@ -13,6 +13,10 @@ header {
 	margin-bottom: 20px;
 }
 
+section {
+    margin: 15px 0px;
+}
+
 
 p {
 	margin-top: 1em;
@@ -139,14 +143,15 @@ footer {
 .inner_header_wrapper {
     max-width: 425px;
     width: 100%;
+    float: left;
     margin-top: 1em;
     margin-right: auto;
     margin-bottom: 1em;
-    margin-left: auto;
+    margin-left: 6em;
 }
 
 .header_wrapper {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: auto;
 
 }
@@ -190,7 +195,7 @@ footer {
 }
 
 .inner_wrapper {
-    max-width: 425px;
+    max-width: 400px;
 }
 
 .yellow_post_it {
