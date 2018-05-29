@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="css/kodcbstyle.css">
+</head>
+
+<body>
+  <form id="chatForm" >
+    <div id="chatbot">
+      <div id="chat">
+        <div class="header">
+          <h1>HAL 9000, your friendly chatbot</h1>
+        </div>
+        <div class="chat-input">
+          <input id="chatInput">
+        </div>
+        <div id="dave" class="chat-pane"></div>
+        <div id="hal" class="chat-pane"></div>
+      </div>
+    </div>
+  </form>
+  <script>
+function myFunction() {
+var text;
+var davesInput = document.getElementById("chatInput").value;
+
+    switch(davesInput) {
+        case "Hal, what day is Today?":
+            text = "Today is Sunday";
+        break;
+        case "Hal, who is in the JSR-508 Class?":
+        text = "Kevin is in JSR-508";
+        break;
+        case "Hal, please eliminate someone from the JSR-508 Class":
+        text = "I've removed Kevin from JSR-508";
+        break;
+        default:
+        text = "Sorry Dave, I can't help with that";
+    }
+    document.getElementById("hal").innerHTML = text;
+}
+  </script>
+</body>
+
+</html>

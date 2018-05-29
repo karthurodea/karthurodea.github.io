@@ -1,0 +1,75 @@
+Pseudocode for My ChatBot
+
+// add an event listener to the form to submit Dave's message
+
+// create a function for HAL to respond to Dave's messages with variable logic based upon Dave's inputs
+
+// create a function for HAL to open the chat with "Good morning, Dave"
+
+// invoke the opening message
+
+
+Question 1 = "Hal, what day is it?"
+Answer 1 = "Today is {day of the week function}"
+
+Question 2 = "Hal, who is in the JSR-508 Class?"
+Answer 2 = "The students enrolled in JSR-508 are: {class roster function}
+
+Question 3 = "Hal, please eliminate someone from the JSR-508 Class"
+Answer 3 = "Ok, I've removed {random classmate function} from JSR-508"
+
+<script>
+document.addEventListener("click", function(){
+    document.getElementById("hal").innerHTML = "Good Morning, Dave";
+});
+</script>
+
+LINE 27 in INDEX.HTML =   <script src="js/main.js"></script>
+
+
+if (chat == "Hal, what day is today?") {
+    document.getElementById('hal').innerHTML += "todayIs()";
+
+
+
+<script>
+function todayIs(){
+var d = new Date();
+var text = "Today is ";
+var today = (text + d);
+console.log (today);
+}
+</script>
+
+
+
+Goal 2:  Share the list of class mates 
+
+//if the user asks "Hal, who is in the JSR-508 Class?""
+//respond with the class roster
+
+if (chat == "Hal, who is in the JSR-508 Class?") {
+    document.getElementById('hal').innerHTML += "classRoster()";
+
+<script>
+function classRoster() {
+var classRoster = ["Sonyl", "Courtney", "Kevin", "Alex", "Alexis", "Andrew", "Bernardo", "Brandon", "Colburn", "Courtney P", "David", "Diana", "Ejaz", "Joana", "Josh", "Kaitlyn", "Kalynne", "Katie", "Myriam", "Nikki", "Tenny", "Timothy"];
+var text = "The students enrolled in JSR-508 are: ";
+var i;
+for (i = 0; i < classRoster.length; i++) {
+    text += classRoster[i] + ", ";
+}
+}
+</script>
+
+use random component in the selector of the class roster and say, 'Hey random person, Hal is going to ___ you.'
+
+randomly select someone and eliminate them from class. 
+
+Goal 3:  
+
+
+Switch 
+
+NOTES:
+regextester.com
