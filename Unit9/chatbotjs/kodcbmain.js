@@ -1,13 +1,12 @@
 
+//in response to each form submission, run primary function 'returnDave'.
 document.getElementById('chatForm').addEventListener('submit', function(event){
     event.preventDefault();
    returnDave();
 });
 
-//global variables
 
-
-//switch between cases looking for a match between dave's input and pre-defined responses
+//primary function that switches between cases looking for a match between the user's input and pre-defined responses from Hal
 
 
 function returnDave() {
@@ -24,17 +23,16 @@ function returnDave() {
             shrinkjsrRoster();
             break;
         case "Thanks":
-            text = "You're welcome, Dave";
+            text = "You're welcome";
             break;
         default:
-            text = "Sorry Dave, I can't help with that";
+            text = "Sorry, I can't help with that";
             break;
     }
     document.getElementById("hal").innerHTML += text + "<br/>";
 }
 
-//run a for loop that displays the class roster in Hal's window
-
+//function that tells the user what day it is.
 
 function whatdayisit() {
     var date = new Date();
@@ -43,6 +41,7 @@ function whatdayisit() {
     document.getElementById("hal").innerHTML += dayoftheweek + "<br/>";
 }
 
+//function that runs a for loop 
 
 function jsrRoster() {
     var davesInput = document.getElementById('chatInput').value;
@@ -55,7 +54,7 @@ function jsrRoster() {
     document.getElementById("hal").innerHTML += text + "<br/>";
 }
 
-// use a random function to choose someone from class and eliminate him/her
+//function to randomly choose someone from class for elimination
 
 function shrinkjsrRoster() {
     var davesInput = document.getElementById('chatInput').value;
@@ -65,84 +64,3 @@ function shrinkjsrRoster() {
     var textrand = text + rand;
     document.getElementById("hal").innerHTML += textrand + "<br/>";
 }
-
-
-
-
-// use a random function to choose someone from class and eliminate him/her
-
-
-
-/* BEGIN COMMENTS
-//Global Variables
-
-var date = new Date();
-var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var dayoftheweek = weekdays[date.getDay()];
-
-
-var message = document.getElementByID('chatInput').value;
-
-
-function getChat() {
-document.getElementById('chatForm').addEventListener('submit', function(event){
-    event.preventDefault();
-  var message = document.getElementById('chatInput').value;
-  console.log(message);
-
-function evaluateChat() {
-    if (chat == "Hal, who is in the JSR-508 Class?") {
-        document.getElementById('hal').innerHTML += classRoster();
-    }
-    if (chat == "Hal, remove someone from class") {
-        document.getElementById('hal').innerHTML += shrinkRoster();
-    }
-}
-
-
-document.addEventListener("click", function(){
-    document.getElementById("hal").innerHTML = "Good Morning, Dave";
-});
-
-
-
-var formData = JSON.stringify($("chatForm").serializeArray());
-
-var formData = new FormData();
-
-formData.append("chatInput")
-
-src="chatbotjs/kodcbmain.js"
-	
-
-var davesInput = document.getElementById("chatInput").value;
-document.getElementById("chatInput", function(){
-	if (chatInput = "Hal, what day is Today?") {
-	document.getElementById("dave").innerHTML = "Hal, what day is Today?";
-	document.getElementByID("hal").innerHTML = today
-	}
-  
-};
-
-function myFunction() {
-var text;
-var davesInput = document.getElementById("chatInput").value;
-
-    switch(questions) {
-        case "Hal, what day is Today?":
-            text = "Today is Sunday";
-        break;
-        case "Hal, who is in the JSR-508 Class?":
-        text = "Kevin is in JSR-508";
-        break;
-        case "Hal, please eliminate someone from the JSR-508 Class":
-        text = "I've removed Kevin from JSR-508";
-        break;
-        default:
-        text = "Sorry Dave, I can't help with that";
-    }
-    document.getElementById("hal").innerHTML = text;
-}
-
-*/
-

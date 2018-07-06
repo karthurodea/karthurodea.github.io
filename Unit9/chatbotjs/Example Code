@@ -1,0 +1,13 @@
+Example Code
+
+var blastOff = function(destination) {
+  console.log("Blasting off for " + destination + "!");
+}
+
+function launchRocket(rocketName, blastOffCallback) {
+  console.log("Launching " + rocketName);
+  console.log("3... 2... 1...");
+  blastOffCallback("Mars");
+}
+
+launchRocket("Viking", blastOff);

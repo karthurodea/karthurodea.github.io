@@ -1,0 +1,30 @@
+Exercise
+
+/*
+
+- Your goal in this exercise is for the last line of code in this file to return the number of odd numbers in the array that's being passed in. Below are the steps that you will likely want to take in order to get there.
+
+- Write a function, 'makeCountingFunction()', that accepts a function as an argument (the "predicate function") and also returns a function. The function that is returned should be able to iterate through an array, apply the predicate function to each item in that array, increment a counter based on the result of applying the predicate function to that item (i.e. does it match what we're looking for?), and lastly, return the final count.
+
+- The predicate function 'isOdd()' should accept an individual number as a parameter and evalute whether or not that number is odd. This function will also need to return something (hint: think boolean values...).
+
+*/
+
+var nums = [1, 2, 3, 4, 5, 6, 7, 8];
+var finalcount = 0;
+
+function makeCountingFunction(arr, func){
+    for (var i =0; i < arr.length; i++){
+        if (func(arr[i])===false){finalcount++};
+    }
+  return finalcount
+
+}
+
+function isOdd(n) {
+  return  n % 2===0;
+}
+
+
+console.log(makeCountingFunction(nums, isOdd));
+	
