@@ -72,55 +72,11 @@ footer {
 
 /* Classes */
 
-.pushpin {
-    transform: rotate(-8deg);
-    margin-top: -5px;
-}
-
-.a {
-    color: #3366BB;
-    padding-left: .65em;
-    margin: .15em;
-}
-
-.li_nav {
-    text-align: center;
-    font-size: .75em;
-    display: inline-block;
-
-}
-
-.imgframe {
-	padding: 5px;
-	margin: 0 auto;
-	border: 2px solid #ffffff;
-}
-
-.circle {
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 125px;
-    /* margin: 75px; */
-}
-
-.hero {
-	text-align: center;
-	width: 100%;
-	padding: 10px 10px 15px 10px;
-	margin-left: auto;
-	margin-right: auto;
-	background: #ffffff;
-}
 
 .strong {
 	font-weight: bold;
 }
 
-.logo {
-	background-color: #FFFFA5;
-    border: 1px black solid;
-    float: left;
-}
 
 .clearfix:after, section:after {
     visibility: hidden;
@@ -136,12 +92,6 @@ footer {
 
 }
 
-.skills {
-	text-align: center;
-	text-transform: uppercase;
-	width: 100%;
-	padding: 10px 10px 10px 10px;
-}
 
 .inner_header_wrapper {
     max-width: 425px;
@@ -159,30 +109,6 @@ footer {
 
 }
 
-.polaroid {
-    background-repeat: no-repeat;
-    transform: rotate(3deg);
-    position: relative;
-    padding: 0 .5em;
-}
-.polaroid_img {
-    width: 100%;
-}
-.circle {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.polaroid div {
-    position: absolute;
-    bottom: 1em;
-    text-align: center;
-    left: 1em;
-    right: 1em;
-}
 .pageJump {
     text-transform: uppercase;
     width: 100%;
