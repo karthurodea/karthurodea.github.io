@@ -42,9 +42,6 @@ $("#teeTime").submit(function(event) {
       url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/e4a90282-b8cc-4e2f-9990-a0fc715657ad",
       contentType: "application/json",
       data: comboTeeTime,
-      context: {
-    	"hutk": "3aea3ab5985f7bc544e847d1f76b5857",
-  },
       success: function(){
           console.log(teeTime);
       },
@@ -53,15 +50,15 @@ $("#teeTime").submit(function(event) {
 
 
 
-// //get data from HubSpot and display in a pop up modal
+//get data from HubSpot and display in a pop up modal
 
-// $("#teeTime").submit(function(event) {
-// 	event.preventDefault();
-// 	$.ajax({
-// 	  type: "GET",
-// 	  url: "https://accesscontrolalloworiginall.herokuapp.com/https://api.hubapi.com/contacts/v1/contact/email/kodea@hubspot.com/profile?hapikey=39027ebe-41be-4022-bf0b-3414b8116a62&property=email",
-// 	  success: function(response){
-// 	  	console.log(response);
-// 	  },
-// 	});
-// });
+$("#teeTime").submit(function(event) {
+	event.preventDefault();
+	$.ajax({
+	  type: "GET",
+	  url: "https://accesscontrolalloworiginall.herokuapp.com/https://api.hubapi.com/contacts/v1/contact/email/kodea@hubspot.com/profile?hapikey=APIKEYHERE&property=email",
+	  success: function(response){
+	  	console.log(response);
+	  },
+	});
+});
