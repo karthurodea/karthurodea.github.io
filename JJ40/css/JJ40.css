@@ -1,4 +1,4 @@
-body {
+.stylz {
 	background-image: url("../images/JJKevin.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,7 +52,7 @@ button {
     font-size: 18px;
 }
 
-/* On screens that are 450px wide or less*/
+/* On screens that are 450px wide or less
 @media screen and (max-width: 450px) {
 
 body {
