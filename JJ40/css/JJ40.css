@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    max-width: 1440px;
+    max-width: 100%;
 }
 
 button {
