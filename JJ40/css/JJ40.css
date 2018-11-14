@@ -111,9 +111,10 @@ p {
     display: table;
     padding-bottom: 5px;
     text-align: center;
+    text-shadow: 2px 2px black;
     font-family: Comic Sans MS;
-    font-size: 24px;
-    color: gray;
+    font-size: 30px;
+    color: white;
 
     }
 
