@@ -9,20 +9,32 @@ body {
     min-height: 100%;
 }
 
-button {
-    font-size: 16px; 
-    font-family: Comic Sans MS;
-    color: black;
-    background-color: white;
-    border-radius: 25%;
-    border-style: groove;
-    padding: 3px;
-}
-
 p {
     text-align: center;
     font-family: Comic Sans MS;
     font-size: 16px;
+}
+
+.button {
+  font-family: Comic Sans MS;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .memory {
@@ -90,6 +102,7 @@ p {
         background-color: white;
         border-radius: 25%;
         border-style: groove;
+        border-width: thin medium thick;
         padding: 10px;
     }
 
@@ -100,7 +113,7 @@ p {
     text-align: center;
     font-family: Comic Sans MS;
     font-size: 24px;
-    color: white;
+    color: black;
 
     }
 

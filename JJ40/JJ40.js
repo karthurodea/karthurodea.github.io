@@ -4,7 +4,7 @@ choose a memory at random, and display the memory in a text box.*/
 var memory = [
     "1. Your AMHS yearbook line about the 'many adventures with Pete and Gabe' was so cool. I stole it and used it in my yearbook for my many adventures with Seth and Jake.",
     "2. Vanessa's VHS tape.",
-    "3. The DVDs you bought on the black market in Peru.  When I was a high school senior I'd watch the final scene of The Matrix before bed a few times a week.  I was also permanently scarred by the copy of The Exorcist.",
+    "3. The DVDs you bought on the black market in Peru.  When I was a high school senior I'd watch the final scene of The Matrix before bed a few times a week.  I was also permanently scarred by the copy of El exorcista.",
     "4. Your wall of academic and athletic achievement in your bedroom.  I spent a lot of time looking at the different mementos wanting the same for myself.",
     "5. Enormous, gross boogers dangling from your finger in the silver Saab.",
     "6. The epic games of darts we played at that bar in NYC.",
@@ -17,7 +17,7 @@ var memory = [
     "13. Visiting Carol at Elon with you, Conor, and his clumsy p*nis.",
     "14. Walking down a street in Bermuda/BVIs/somewhere outside the country when a stranger asked us in passing if we wanted some 'herb' or 'rock'.  His question immediately went over my head, until you asked me a few moments later, 'Oh I'm sorry, did you want some crack?",
     "15. Your best man speech at my wedding.",
-    "16. An improbable tie followed by an under-appearl victory for you at Wintonberry Hills Golf Course.",
+    "16. An improbable tie followed by an under-appeal victory for you at Wintonberry Hills Golf Course.",
     "17. When you yelled out the Saab window at Richard Mason 'Smoke a bone Mason!'  I used that line A LOT on my friends.",
     "18. Epic crotch grabs off the driveway plow kicker.",
     "19. Playing golf with your hand-me-down irons until I die.",
