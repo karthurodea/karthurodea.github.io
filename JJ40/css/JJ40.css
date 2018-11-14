@@ -52,15 +52,25 @@ p {
     text-align: center;
 }
 
+ .container {
+        max-width: 425px;
+        width: 100%;
+        margin-top: 15em;
+        margin-right: auto;
+        margin-bottom: 5em;
+        margin-left: auto;
+        position: relative;
+        border-style: solid;
+    }
+
 #container {
-    max-width: 425px;
+   /* max-width: 425px;
     width: 100%;
     margin-top: 15em;
     margin-right: auto;
     margin-bottom: 5em;
     margin-left: auto;
-    position: relative;
-    border-style: solid;
+    position: relative;*/
 }
 
 #container p {
@@ -128,6 +138,16 @@ p {
     }
 
     #container {
+        /*max-width: 667px;
+        width: 100%;
+        margin-top: 30em;
+        margin-right: auto;
+        margin-bottom: 5em;
+        margin-left: auto;
+        position: relative;*/
+    }
+
+     .container {
         max-width: 667px;
         width: 100%;
         margin-top: 30em;
