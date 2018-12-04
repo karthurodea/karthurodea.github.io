@@ -14,16 +14,20 @@ $(document).ready( function getCookie () {
         var cookieArray2 = cookieArray[i].split("=");
         if (cookieArray2[0] == ("hubspotutk")) {
             utk = cookieArray2[1];
-            break;
+            hsContext.hutk = utk;
+            hsContext.pageUrl = window.location.href;
+            hsContext.pageName = document.title;
+            console.log(hsContext);
+          break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
           utk = cookieArray2[1];
           break;
         };
-    hsContext.hutk = utk;
-    hsContext.pageUrl = window.location.href;
-    hsContext.pageName = document.title;
-    console.log(hsContext);
+    // hsContext.hutk = utk;
+    // hsContext.pageUrl = window.location.href;
+    // hsContext.pageName = document.title;
+    // console.log(hsContext);
   }});
 
 // on form submit convert data to required format for HubSpot
