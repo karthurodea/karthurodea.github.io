@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Home | Kevin O'Dea</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 </head>
 
 <!-- So it begins ... -->
 
-<body>	
+<body class="container-fluid">	
 	<header>
-			<div>
-				<h1>Kevin Arthur O'Dea</h1><br><h2>HubSpot Consulting & Advisory For SMBs</h2>
-				<ol>
-					<li>HubSpot</li>
-					<li>Sales Enablement</li> 
-					<li>Digital Marketing</li>
-				</ol>
+			<div class="container top">
+				<h1>Kevin Arthur O'Dea</h1>
+				<h2>Sales Engineer</h2>
+				<img class="center-block rounded" src="images/kevinHeadshot.JPG" alt="head shot"
 			</div>
 	</header>
 <main>
-	<section>
-		<h1>Let's Talk</h1>
-		<div>
-			<p id=sE>Toss your info into the form and I'll follow up within 24 hours.</p>
-			<form id="salesEngineer">
-				First name:<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<section class="salesEngineer">
+					<h1>Qualifications</h1>
+					<ul>
+						<li>Comfortable speaking HTML, CSS, Javascript, JQuery.</li>
+						<li>3 years of experience consulting with HubSpot customers.</li>
+						<li>Consistent high-performer.</li>
+					</ul>
+				</section>
+			</div>
+			<div class="col-sm-6">
+				<h1>Let's Talk</h1>
+				<p>Fill out the form and I will contact you via email with a copy of my resume and key references.</p>
+				<form id="salesEngineer">
+				First Name:<br>
 				<input type="text" name="firstname"><br>
-				Last name:<br>
+				Last Name:<br>
 				<input type="text" name="lastname"><br>
 				Email:<br>
-				<input type="text" name="email"><br>
-				Submit:<br>
+				<input type="text" name="email"><br><br>
 				<input type="submit"><br>
-			</form>
+				</form>
+			</div>
 		</div>
-	</section>
-	<footer class>
-	<ol>
-	</ol>
-	</footer>
-
+	</div>
+<footer>
+	<div class="container">
+	</div>
+</footer>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="salesEngineer.js"></script>
