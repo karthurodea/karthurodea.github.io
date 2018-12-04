@@ -3,7 +3,7 @@
 //parse the hubspotutk value after the = sign
 //assign the value to a variable called hutk
 
-window.onload = function getCookie () {
+$(document).ready( function getCookie () {
     var cookieArray = document.cookie.split(';');
     for (i = 0; i < cookieArray.length; i++) {
         var cookieArray2 = cookieArray[i].split("=");
@@ -12,7 +12,7 @@ window.onload = function getCookie () {
             console.log(hutk);
             break;
         }
-    }};
+    }});
 
 // on form submit convert data to required format for HubSpot
 
