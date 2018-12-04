@@ -10,8 +10,8 @@ $(document).ready( function getCookie () {
     var cookieArray = document.cookie.split(';');
     for (i = 0; i < cookieArray.length; i++) {
         var cookieArray2 = cookieArray[i].split("=");
-        if (cookieArray2[0] == (" " + "hubspotutk")) {
-            var hutk = cookieArray2[1];
+        if (cookieArray2[0] == ("hubspotutk")) {
+            hutk = cookieArray2[1];
             break;
         }
     }});
@@ -22,7 +22,7 @@ $(document).ready( function getCookie () {
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
-    var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + hutk + '"' + '},' + '}';
+    hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + hutk + '"' + '},' + '}';
       $.ajax({
         type: "POST",
         url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
