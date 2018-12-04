@@ -28,8 +28,8 @@ $(document).ready( function getCookie () {
         };
   }});
 
-on form submit convert data to required format for HubSpot
-send data through HubSpot Form
+// on form submit convert data to required format for HubSpot
+// send data through HubSpot Form
 
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
