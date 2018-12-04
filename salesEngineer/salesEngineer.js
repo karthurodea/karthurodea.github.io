@@ -36,22 +36,23 @@ $("#salesEngineer").submit(function(event) {
     meetingRequest = ($("#salesEngineer").serializeArray());
     // hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + utk + '",' + '},' + ' }';
     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + ' }';
-      $.ajax({
-        type: "POST",
-        url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
-        contentType: "application/json",
-        data: hsContact,
-      success: function(){
-          var card = document.createElement("P");
-          var confirmation = `<div>
-            <h1>Your Request Has Been Submitted!</h1>
-            </div>`;
-          var submission = document.createTextNode(confirmation);
-          card.appendChild(confirmation);
-          document.getElementById("salesEngineer").appendChild(card);
-    $("#salesEngineer").empty();
-    $("#salesEngineer").append(confirmation);
-      },
-    });
+    console.log(hsContact);
+    //   $.ajax({
+    //     type: "POST",
+    //     url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
+    //     contentType: "application/json",
+    //     data: hsContact,
+    //   success: function(){
+    //       var card = document.createElement("P");
+    //       var confirmation = `<div>
+    //         <h1>Your Request Has Been Submitted!</h1>
+    //         </div>`;
+    //       var submission = document.createTextNode(confirmation);
+    //       card.appendChild(confirmation);
+    //       document.getElementById("salesEngineer").appendChild(card);
+    // $("#salesEngineer").empty();
+    // $("#salesEngineer").append(confirmation);
+    //   },
+    // });
   });
 
