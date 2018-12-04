@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Shadows+Into+Light');
+
+body {
+    background-image: url("../images/JJKevin.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    float: none;
+    background-position: center;
+    background-size: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+p {
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+}
+
+.button {
+  font-family: Comic Sans MS;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.memory {
+
+    margin: 0 auto;
+    display: table;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;   
+    background-color: gray;
+    text-align: center;
+}
+
+ .container {
+        max-width: 425px;
+        width: 100%;
+        margin-top: 15em;
+        margin-right: auto;
+        margin-bottom: 5em;
+        margin-left: auto;
+        position: relative;
+        border-style: solid;
+    }
+
+#container {
+   /* max-width: 425px;
+    width: 100%;
+    margin-top: 15em;
+    margin-right: auto;
+    margin-bottom: 5em;
+    margin-left: auto;
+    position: relative;*/
+}
+
+#container p {
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    color: black;
+    background-color: white;
+    font-family: Comic Sans MS;
+
+}
+
+#birthday {
+    font-size: 18px;
+}
+
+/*On screens that are 375px wide or less*/
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) { 
+
+    body {
+        background-image: url("../images/JJKevin.JPG");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        float: none;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    button {
+        font-size: 24px; 
+        font-family: Comic Sans MS;
+        color: black;
+        background-color: white;
+        border-radius: 25%;
+        border-style: groove;
+        border-width: thin medium thick;
+        padding: 10px;
+    }
+
+    .title {
+    margin: 0 auto;
+    display: table;
+    padding-bottom: 5px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    color: white;
+
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;   /* Height of the footer */
+        background-color: gray;
+        text-align: center;
+    }
+
+    #container {
+        /*max-width: 667px;
+        width: 100%;
+        margin-top: 30em;
+        margin-right: auto;
+        margin-bottom: 5em;
+        margin-left: auto;
+        position: relative;*/
+    }
+
+     .container {
+        max-width: 667px;
+        width: 100%;
+        margin-top: 30em;
+        margin-right: auto;
+        margin-bottom: 5em;
+        margin-left: auto;
+        position: relative;
+        border-style: solid;
+    }
+
+    #container p {
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    color: black;
+    background-color: white;
+    font-family: Comic Sans MS;
+    font-size: 32px;
+
+    }
+}
+
