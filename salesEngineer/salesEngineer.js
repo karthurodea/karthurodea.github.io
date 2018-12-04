@@ -43,9 +43,9 @@ $("#salesEngineer").submit(function(event) {
         success: function(){
           var card = document.createElement("P");
           var confirmation = document.createTextNode("Success! Your Request Has Been Submitted!");
+          $("#salesEngineer").empty();
           card.appendChild(confirmation);
           document.getElementById("salesEngineer").appendChild(card);
-          $("#salesEngineer").empty();
         },
     });
 });
