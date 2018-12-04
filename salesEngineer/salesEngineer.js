@@ -26,35 +26,32 @@ $(document).ready( function getCookie () {
             hsContext.pageName = document.title;
           break;
         };
-    // hsContext.hutk = utk;
-    // hsContext.pageUrl = window.location.href;
-    // hsContext.pageName = document.title;
-    // console.log(hsContext);
   }});
 
-// on form submit convert data to required format for HubSpot
-// send data through HubSpot Form
+on form submit convert data to required format for HubSpot
+send data through HubSpot Form
 
-// $("#salesEngineer").submit(function(event) {
-//     event.preventDefault();
-//     meetingRequest = ($("#salesEngineer").serializeArray());
-//     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + utk + '",' + '},' + ' }';
-//       $.ajax({
-//         type: "POST",
-//         url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
-//         contentType: "application/json",
-//         data: hsContact,
-//       success: function(){
-//           var card = document.createElement("P");
-//           var confirmation = `<div>
-//             <h1>Your Request Has Been Submitted!</h1>
-//             </div>`;
-//           var submission = document.createTextNode(confirmation);
-//           card.appendChild(confirmation);
-//           document.getElementById("salesEngineer").appendChild(card);
-//     $("#salesEngineer").empty();
-//     $("#salesEngineer").append(confirmation);
-//       },
-//     });
-//   });
+$("#salesEngineer").submit(function(event) {
+    event.preventDefault();
+    meetingRequest = ($("#salesEngineer").serializeArray());
+    // hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + utk + '",' + '},' + ' }';
+    hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + ' }';
+      $.ajax({
+        type: "POST",
+        url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
+        contentType: "application/json",
+        data: hsContact,
+      success: function(){
+          var card = document.createElement("P");
+          var confirmation = `<div>
+            <h1>Your Request Has Been Submitted!</h1>
+            </div>`;
+          var submission = document.createTextNode(confirmation);
+          card.appendChild(confirmation);
+          document.getElementById("salesEngineer").appendChild(card);
+    $("#salesEngineer").empty();
+    $("#salesEngineer").append(confirmation);
+      },
+    });
+  });
 
