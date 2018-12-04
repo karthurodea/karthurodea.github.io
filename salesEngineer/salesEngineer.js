@@ -3,13 +3,15 @@
 //parse the hubspotutk value after the = sign
 //assign the value to a variable called hutk
 
+var hutk;
+var hsContact;
+
 $(document).ready( function getCookie () {
     var cookieArray = document.cookie.split(';');
     for (i = 0; i < cookieArray.length; i++) {
         var cookieArray2 = cookieArray[i].split("=");
         if (cookieArray2[0] == ("hubspotutk")) {
             var hutk = cookieArray2[1];
-            return hutk;
             break;
         }
     }});
