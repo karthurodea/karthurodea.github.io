@@ -8,7 +8,7 @@ $(document).ready( function getCookie () {
     for (i = 0; i < cookieArray.length; i++) {
         var cookieArray2 = cookieArray[i].split("=");
         if (cookieArray2[0] == ("hubspotutk")) {
-            hutk = cookieArray2[1];
+            var hutk = cookieArray2[1];
             break;
         }
     }});
