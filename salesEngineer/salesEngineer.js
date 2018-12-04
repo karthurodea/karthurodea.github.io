@@ -20,7 +20,7 @@ $("#salesEngineer").submit(function(event) {
     meetingRequest = ($("#salesEngineer").serializeArray());
     var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + hutk + '"' + '},' + '}';
     console.log(hsContact);
-};
+});
     
 // send data through HubSpot Form
 
