@@ -10,7 +10,7 @@ $(document).ready( function getCookie () {
     var cookieArray = document.cookie.split(';');
     for (i = 0; i < cookieArray.length; i++) {
         var cookieArray2 = cookieArray[i].split("=");
-        if (cookieArray2[0] == ("hubspotutk")) {
+        if (cookieArray2[0] == (" " + "hubspotutk")) {
             var hutk = cookieArray2[1];
             break;
         }
