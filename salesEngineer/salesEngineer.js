@@ -17,11 +17,13 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
-            console.log(hsContext);
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
           utk = cookieArray2[1];
+          hsContext.hutk = utk;
+            hsContext.pageUrl = window.location.href;
+            hsContext.pageName = document.title;
           break;
         };
     // hsContext.hutk = utk;
