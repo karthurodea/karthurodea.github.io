@@ -14,20 +14,17 @@ $(document).ready( function getCookie () {
     }});
 
 // on form submit convert data to required format for HubSpot
+// send data through HubSpot Form
 
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
     var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + hutk + '"' + '},' + '}';
-});
-    
-// send data through HubSpot Form
-
-    $.ajax({
-      type: "POST",
-      url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
-      contentType: "application/json",
-      data: hsContact,
+      $.ajax({
+        type: "POST",
+        url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
+        contentType: "application/json",
+        data: hsContact,
       success: function(){
           var card = document.createElement("P");
           var confirmation = `<div>
@@ -40,4 +37,5 @@ $("#salesEngineer").submit(function(event) {
     $("#salesEngineer").append(confirmation);
       },
     });
+  });
 
