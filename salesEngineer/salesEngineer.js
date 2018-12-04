@@ -16,12 +16,12 @@ $(document).ready( function getCookie () {
 
 // on form submit convert data to required format for HubSpot
 
-// $("#salesEngineer").submit(function(event) {
-//     event.preventDefault();
-//     meetingRequest = ($("#salesEngineer").serializeArray());
-//     var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ',' + '"context": {' + '"hutk": ' + '"' + hutk + '"' '},' + '}';
-//     console.log(hsContact);
-// };
+$("#salesEngineer").submit(function(event) {
+    event.preventDefault();
+    meetingRequest = ($("#salesEngineer").serializeArray());
+    var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ',' + '"context": {' + '"hutk": ' + '"' + hutk + '"' '},' + '}';
+    console.log(hsContact);
+};
     
 // send data through HubSpot Form
 
@@ -44,9 +44,3 @@ $(document).ready( function getCookie () {
 //     });
 // });
 
-// var card = document.createElement("P");
-//     var showMemory = document.createTextNode(randomMemory);
-//     card.appendChild(showMemory);
-//   document.getElementById("container").appendChild(card);
-//     var border = document.getElementById("container");
-//     border.classList.add("container");
