@@ -9,7 +9,7 @@ $(document).ready( function getCookie () {
         var cookieArray2 = cookieArray[i].split("=");
         if (cookieArray2[0] == (" " + "hubspotutk")) {
             hutk = cookieArray2[1];
-            console.log(hutk);
+            alert(hutk);
             break;
         }
     }});
