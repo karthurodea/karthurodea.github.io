@@ -18,7 +18,7 @@ $(document).ready( function getCookie () {
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
-    var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ',' + '"context": {' + '"hutk": ' + '"' + hutk + '"' '},' + '}';
+    var hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": {' + '"hutk": ' + '"' + hutk + '"' + '},' + '}';
     console.log(hsContact);
 };
     
