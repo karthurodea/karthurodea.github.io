@@ -15,14 +15,14 @@ $(document).ready( function getCookie () {
         if (cookieArray2[0] == ("hubspotutk")) {
             utk = cookieArray2[1];
             hsContext.hutk = utk;
-            hsContext.pageUrl = window.location.href;
+            hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
           utk = cookieArray2[1];
           hsContext.hutk = utk;
-            hsContext.pageUrl = window.location.href;
+            hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
           break;
         };
