@@ -20,8 +20,8 @@ $(document).ready( function getCookie () {
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
-          utk = cookieArray2[1];
-          hsContext.hutk = utk;
+            utk = cookieArray2[1];
+            hsContext.hutk = utk;
             hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
           break;
@@ -40,17 +40,13 @@ $("#salesEngineer").submit(function(event) {
         url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
         contentType: "application/json",
         data: hsContact,
-      success: function(){
+        success: function(){
           var card = document.createElement("P");
-          var confirmation = `<div>
-            <h1>Your Request Has Been Submitted!</h1>
-            </div>`;
-          var submission = document.createTextNode(confirmation);
+          var confirmation = document.createTextNode("Success! Your Request Has Been Submitted!");
           card.appendChild(confirmation);
-          document.getElementById("salesEngineer").appendChild(card);
-    $("#salesEngineer").empty();
-    $("#salesEngineer").append(submission);
-      },
+          document.getElementById("sE").appendChild(card);
+          $("#salesEngineer").empty();
+        },
     });
-  });
+});
 
