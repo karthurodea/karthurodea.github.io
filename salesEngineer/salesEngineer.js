@@ -1,7 +1,15 @@
+//initialize references carousel
+
+// $('.carousel').carousel({
+//   interval: 2000
+// });
+
+
 //separate the cookie string into an array
 //loop through the array to find the hubspotutk
 //parse the hubspotutk value after the = sign
 //assign the value to a variable called hutk
+
 
 var utk;
 var hsContact;
