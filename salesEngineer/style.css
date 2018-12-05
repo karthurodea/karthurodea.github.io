@@ -1,5 +1,7 @@
 /* Elements */
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import ~slick-carousel/slick/slick.css;
+@import ~slick-carousel/slick/slick-theme.css;
 
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -81,8 +83,6 @@ ul {
     margin:1em 1em; 
     border-style: solid; 
     border-width:5px;
-
-
 }
 
 /* Classes */
