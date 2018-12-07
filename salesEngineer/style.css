@@ -11,7 +11,7 @@ body {
 
 header {
 	margin-bottom: 20px;
-    background-color: gray;
+    background-color: #D8621D;
     border: 2px solid black;
     border-radius: 25px;
 }
@@ -84,9 +84,10 @@ ul {
 }
 
 #references {
-    background-color: #D8621D;
+    background-color: #ffffff; 
     border: 2px solid black;
     border-radius: 25px;
+    max-width: 50%;
 }
 
 #mark {
@@ -94,11 +95,18 @@ ul {
 }
 
 #jeff {
-    margin: auto; 
+    margin: auto;
 }
 
 #headshot {
     border-radius: 50% !important;
+}
+
+#ref{
+    background-color: #D8621D;
+    border: 2px solid black;
+    border-radius: 25px;
+    max-width: 100%;
 }
 
 /* Classes */
@@ -107,14 +115,16 @@ ul {
 .top {
     border: 2px solid black;
     border-radius: 25px;
-    background-color: #D8621D;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     text-align: center;
 }
 
 .salesEngineer {
     text-align: center;
 }
+
+
 
 
 
