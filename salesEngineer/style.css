@@ -1,7 +1,5 @@
 /* Elements */
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
-@import ~slick-carousel/slick/slick.css;
-@import ~slick-carousel/slick/slick-theme.css;
 
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -24,7 +22,7 @@ footer {
 }
 
 img {
-    border-radius: 50%;
+
     border: 1px solid #021a40;
 }
 
@@ -85,6 +83,24 @@ ul {
     border-width:5px;
 }
 
+#references {
+    background-color: #D8621D;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#mark {
+    margin: auto; 
+}
+
+#jeff {
+    margin: auto; 
+}
+
+#headshot {
+    border-radius: 50% !important;
+}
+
 /* Classes */
 
 
@@ -93,6 +109,7 @@ ul {
     border-radius: 25px;
     background-color: #D8621D;
     color: white;
+    text-align: center;
 }
 
 .salesEngineer {
@@ -100,6 +117,5 @@ ul {
 }
 
 
-/* Media Queries */
 
 

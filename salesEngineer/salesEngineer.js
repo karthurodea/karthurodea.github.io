@@ -1,5 +1,3 @@
-
-
 //separate the cookie string into an array
 //loop through the array to find the hubspotutk
 //parse the hubspotutk value after the = sign
