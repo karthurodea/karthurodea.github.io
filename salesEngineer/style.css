@@ -145,6 +145,28 @@ ul {
     border-radius: 25%;
 }
 
+/*On screens that are 375px wide or less*/
 
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) {
+
+#references {
+    background-color: #ffffff; 
+    border: 2px solid black;
+    border-radius: 25px;
+    max-width: 100%;
+}
+
+p {
+    font-size: .25em;
+}
+
+h5 {
+    font-size: .5em;
+}
+
+    }
 
 
