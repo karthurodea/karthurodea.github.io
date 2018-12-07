@@ -10,14 +10,12 @@ body {
 }
 
 header {
-	margin-bottom: 20px;
     background-color: #D8621D;
     border: 2px solid black;
     border-radius: 25px;
 }
 
 footer {
-    margin-top: 20px;
     background-color: gray;
 }
 
@@ -31,6 +29,7 @@ p {
 	margin-top: 1em;
     padding: 1px;
     text-align: center;
+    color: black !important;
 }
 
 
@@ -53,6 +52,17 @@ h2 {
 h3 {
 	font-size: 18px;
 	text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 22px;
+    text-align: center;
+    color: black !important;
 }
 
 ul {
@@ -87,7 +97,7 @@ ul {
     background-color: #ffffff; 
     border: 2px solid black;
     border-radius: 25px;
-    max-width: 50%;
+    max-width: 75%;
 }
 
 #mark {
@@ -118,6 +128,7 @@ ul {
     background-color: #ffffff;
     color: black;
     text-align: center;
+    max-width: 75%;
 }
 
 .salesEngineer {
