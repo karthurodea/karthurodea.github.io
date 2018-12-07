@@ -160,11 +160,11 @@ ul {
 }
 
 .carousel-caption p {
-    font-size: .7em;
+    font-size: .75em;
 }
 
-h5 {
-    font-size: .85em;
+.carousel-caption h5 {
+    font-size: .9em;
 }
 
     }
