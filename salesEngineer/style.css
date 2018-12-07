@@ -124,7 +124,15 @@ ul {
     text-align: center;
 }
 
+.carousel-control-prev {
+    background-color: #D8621D;
+    border-radius: 25%;
+}
 
+.carousel-control-next {
+    background-color: #D8621D;
+    border-radius: 25%;
+}
 
 
 
