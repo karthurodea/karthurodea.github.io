@@ -9,32 +9,7 @@ var hsContact;
 var hsContext = new Object();
 
 
-// $(document).ready( function getCookie () {
-//     var cookieArray = document.cookie.split(';');
-//     for (i = 0; i < cookieArray.length; i++) {
-//         var cookieArray2 = cookieArray[i].split("=");
-//         if (cookieArray2[0] == ("hubspotutk")) {
-//             utk = cookieArray2[1];
-//             hsContext.hutk = utk;
-//             hsContext.pageUri = window.location.href;
-//             hsContext.pageName = document.title;
-//           break;
-//         }
-//         else if (cookieArray2[0] == (" " + "hubspotutk")) {
-//             utk = cookieArray2[1];
-//             hsContext.hutk = utk;
-//             hsContext.pageUri = window.location.href;
-//             hsContext.pageName = document.title;
-//           break;
-//         };
-//   }});
-
-// on form submit convert data to required format for HubSpot
-// send data through HubSpot Form
-
-$("#salesEngineer").submit(function(event) {
-    event.preventDefault();
-    function getCookie () {
+$(document).ready( function getCookie () {
     var cookieArray = document.cookie.split(';');
     for (i = 0; i < cookieArray.length; i++) {
         var cookieArray2 = cookieArray[i].split("=");
@@ -52,7 +27,13 @@ $("#salesEngineer").submit(function(event) {
             hsContext.pageName = document.title;
           break;
         };
-  }};
+  }});
+
+// on form submit convert data to required format for HubSpot
+// send data through HubSpot Form
+
+$("#salesEngineer").submit(function(event) {
+    event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + '"skipValidation": false' + ' }';
       $.ajax({
