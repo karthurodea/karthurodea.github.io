@@ -18,19 +18,19 @@ $(document).ready( function getCookie () {
         if (cookieArray2[0] == ("hubspotutk")) {
             utk = cookieArray2[1];
             hsContext.hutk = utk;
-            hsContext.pageUri = window.location.href;
+            hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
             JSON.stringify(hsContext);
-            console.log(hsContext);
+            console.log(encodeURIComponent(hsContext));
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
             utk = cookieArray2[1];
             hsContext.hutk = utk;
-            hsContext.pageUri = window.location.href;
+            hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
             JSON.stringify(hsContext);
-            console.log(hsContext);
+            console.log(encodeURIComponent(hsContext));
           break;
         };
   }});
@@ -38,15 +38,32 @@ $(document).ready( function getCookie () {
 // on form submit convert data to required format for HubSpot
 // send data through HubSpot Form
 
-$("#salesEngineer").submit(function(event) {
-    event.preventDefault();
-    meetingRequest = ($("#salesEngineer").serializeArray());
-    firstName = meetingRequest[0].value;
-    lastName = meetingRequest[1].value;
-    email = meetingRequest[2].value;
-    console.log(firstName);
-    console.log(lastName);
-    console.log(email);
+// $("#salesEngineer").submit(function(event) {
+//     event.preventDefault();
+//     meetingRequest = ($("#salesEngineer").serializeArray());
+//     firstName = meetingRequest[0].value;
+//     lastName = meetingRequest[1].value;
+//     email = meetingRequest[2].value;
+//     console.log(firstName);
+//     console.log(lastName);
+//     console.log(email);
+//       $.ajax({
+//         type: "POST",
+//         url: "salesEngineer.php",
+//         contentType: "application/json",
+//         data: hsContact,
+//         success: function(){
+//           var card = document.createElement("P");
+//           var confirmation = document.createTextNode("Success! Your Request Has Been Submitted!");
+//           $("#salesEngineer").empty();
+//           card.appendChild(confirmation);
+//           document.getElementById("salesEngineer").appendChild(card);
+//         },
+//     });
+// });
+
+
+
 //     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + '"skipValidation": false' + ' }';
 //       $.ajax({
 //         type: "POST",
@@ -60,6 +77,3 @@ $("#salesEngineer").submit(function(event) {
 //           card.appendChild(confirmation);
 //           document.getElementById("salesEngineer").appendChild(card);
 //         },
-    });
-// });
-
