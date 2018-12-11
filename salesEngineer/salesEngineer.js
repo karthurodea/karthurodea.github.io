@@ -7,7 +7,9 @@
 var utk;
 var hsContact;
 var hsContext = new Object();
-
+var firstName;
+var lastName;
+var email;
 
 $(document).ready( function getCookie () {
     var cookieArray = document.cookie.split(';');
@@ -39,7 +41,12 @@ $(document).ready( function getCookie () {
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
-    console.log(meetingRequest);
+    meetingRequest[0].value = firstName;
+    meetingRequest[1].value = lastName;
+    meetingRequest[2].value = email;
+    console.log(firstName);
+    console.log(lastName);
+    console.log(email);
 //     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + '"skipValidation": false' + ' }';
 //       $.ajax({
 //         type: "POST",
