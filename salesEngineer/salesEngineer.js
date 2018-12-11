@@ -42,8 +42,8 @@ $(document).ready( function getCookie () {
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
-    meetingRequest1 = encodeURIComponent(JSON.stringify(meetingRequest));
-    console.log(meetingRequest1);
+    // meetingRequest1 = encodeURIComponent(JSON.stringify(meetingRequest));
+    console.log(meetingRequest);
     //   $.ajax({
     //     type: "POST",
     //     url: "salesEngineer.php",
