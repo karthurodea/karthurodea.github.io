@@ -6,8 +6,10 @@
 
 var utk;
 var hsContact;
+var block;
 // var hsContext = new Object();
 var hsContext = [];
+var meetingRequest1 = [];
 var firstName;
 var lastName;
 var email;
@@ -42,8 +44,14 @@ $(document).ready( function getCookie () {
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
-    // meetingRequest1 = encodeURIComponent(JSON.stringify(meetingRequest));
-    console.log(meetingRequest);
+    firstName = meetingRequest[0].value;
+    lastName = meetingRequest[1].value;
+    email = meetingRequest[2].value;
+    meetingRequest1.push("firstname=" + firstName);
+    meetingRequest1.push("&lastname=" + lastName);
+    meetingRequest1.push("&email=" + email);
+    block = encodeURIComponent(JSON.stringify(meetingRequest1));
+    console.log(block + hsContact);
     //   $.ajax({
     //     type: "POST",
     //     url: "salesEngineer.php",
