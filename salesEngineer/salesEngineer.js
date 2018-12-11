@@ -41,9 +41,9 @@ $(document).ready( function getCookie () {
 $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
-    meetingRequest[0].value = firstName;
-    meetingRequest[1].value = lastName;
-    meetingRequest[2].value = email;
+    firstName = meetingRequest[0].value;
+    lastName = meetingRequest[1].value;
+    email = meetingRequest[2].value;
     console.log(firstName);
     console.log(lastName);
     console.log(email);
