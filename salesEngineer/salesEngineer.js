@@ -18,6 +18,7 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
+            console.log(hsContext);
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
@@ -25,9 +26,9 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
+            console.log(hsContext);
           break;
         };
-        console.log(hsContext);
   }});
 
 // on form submit convert data to required format for HubSpot
