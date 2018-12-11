@@ -45,8 +45,8 @@ $("#salesEngineer").submit(function(event) {
     event.preventDefault();
     meetingRequest = ($("#salesEngineer").serializeArray());
     firstName = meetingRequest[0].value;
-    lastName = "&" + meetingRequest[1].value;
-    email = "&" + meetingRequest[2].value;
+    lastName = "&lastname=" + meetingRequest[1].value;
+    email = "&email=" + meetingRequest[2].value;
     block = "firstname=" + firstName + lastName + email;
     console.log(block + hsContact);
     //   $.ajax({
