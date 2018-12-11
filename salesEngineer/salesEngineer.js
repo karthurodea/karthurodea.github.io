@@ -20,9 +20,8 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
-            JSON.stringify(hsContext);
-            console.log(hsContext);
-            console.log(encodeURI(hsContext));
+            hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            console.log(hsContact);
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
@@ -30,9 +29,8 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
-            JSON.stringify(hsContext);
-            console.log(hsContext);
-            console.log(encodeURI(hsContext));
+            hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            console.log(hsContact);
           break;
         };
   }});
