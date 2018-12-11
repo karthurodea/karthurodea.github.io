@@ -7,7 +7,7 @@
 var utk;
 var hsContact;
 // var hsContext = new Object();
-var hsContext = [];
+var hsContext = ["&hscontext=",];
 var firstName;
 var lastName;
 var email;
@@ -19,8 +19,8 @@ $(document).ready( function getCookie () {
         if (cookieArray2[0] == ("hubspotutk")) {
             utk = cookieArray2[1];
             hsContext.push("hutk=" + utk);
-            hsContext.push("pageUrl=" + window.location.href);
-            hsContext.push("pageName=" + document.title);
+            hsContext.push("&pageUrl=" + window.location.href);
+            hsContext.push("&pageName=" + document.title);
             hsContact = encodeURIComponent(JSON.stringify(hsContext));
             console.log(hsContact);
           break;
@@ -28,8 +28,8 @@ $(document).ready( function getCookie () {
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
             utk = cookieArray2[1];
             hsContext.push("hutk=" + utk);
-            hsContext.push("pageUrl=" + window.location.href);
-            hsContext.push("pageName=" + document.title);
+            hsContext.push("&pageUrl=" + window.location.href);
+            hsContext.push("&pageName=" + document.title);
             hsContact = encodeURIComponent(JSON.stringify(hsContext));
             console.log(hsContact);
           break;
