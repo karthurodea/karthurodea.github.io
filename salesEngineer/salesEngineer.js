@@ -7,7 +7,7 @@
 var utk;
 var hsContact;
 // var hsContext = new Object();
-var hsContext = ["&hscontext=",];
+var hsContext = [];
 var firstName;
 var lastName;
 var email;
@@ -21,7 +21,7 @@ $(document).ready( function getCookie () {
             hsContext.push("hutk=" + utk);
             hsContext.push("&pageUrl=" + window.location.href);
             hsContext.push("&pageName=" + document.title);
-            hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            hsContact = "&hs_context=" + encodeURIComponent(JSON.stringify(hsContext));
             console.log(hsContact);
           break;
         }
@@ -30,7 +30,7 @@ $(document).ready( function getCookie () {
             hsContext.push("hutk=" + utk);
             hsContext.push("&pageUrl=" + window.location.href);
             hsContext.push("&pageName=" + document.title);
-            hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            hsContact = "&hs_context=" + encodeURIComponent(JSON.stringify(hsContext));
             console.log(hsContact);
           break;
         };
