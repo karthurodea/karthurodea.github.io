@@ -6,7 +6,8 @@
 
 var utk;
 var hsContact;
-var hsContext = new Object();
+// var hsContext = new Object();
+var hsContext = [];
 var firstName;
 var lastName;
 var email;
@@ -17,20 +18,20 @@ $(document).ready( function getCookie () {
         var cookieArray2 = cookieArray[i].split("=");
         if (cookieArray2[0] == ("hubspotutk")) {
             utk = cookieArray2[1];
-            hsContext.hutk = utk;
-            hsContext.pageUrl = window.location.href;
-            hsContext.pageName = document.title;
-            hsContact = encodeURIComponent(JSON.stringify(hsContext));
-            console.log(hsContact);
+            hsContext.push("hutk=" + utk);
+            // hsContext.pageUrl = window.location.href;
+            // hsContext.pageName = document.title;
+            // hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            console.log(hsContext);
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
             utk = cookieArray2[1];
-            hsContext.hutk = utk;
-            hsContext.pageUrl = window.location.href;
-            hsContext.pageName = document.title;
-            hsContact = encodeURIComponent(JSON.stringify(hsContext));
-            console.log(hsContact);
+            hsContext.push("hutk=" + utk);
+            // hsContext.pageUrl = window.location.href;
+            // hsContext.pageName = document.title;
+            // hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            console.log(hsContext);
           break;
         };
   }});
