@@ -22,7 +22,7 @@ $(document).ready( function getCookie () {
             hsContext.pageName = document.title;
             JSON.stringify(hsContext);
             console.log(hsContext);
-            console.log(encodeURIComponent(hsContext));
+            console.log(encodeURI(hsContext));
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
@@ -32,7 +32,7 @@ $(document).ready( function getCookie () {
             hsContext.pageName = document.title;
             JSON.stringify(hsContext);
             console.log(hsContext);
-            console.log(encodeURIComponent(hsContext));
+            console.log(encodeURI(hsContext));
           break;
         };
   }});
