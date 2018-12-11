@@ -36,9 +36,10 @@ $(document).ready( function getCookie () {
 // on form submit convert data to required format for HubSpot
 // send data through HubSpot Form
 
-// $("#salesEngineer").submit(function(event) {
-//     event.preventDefault();
-//     meetingRequest = ($("#salesEngineer").serializeArray());
+$("#salesEngineer").submit(function(event) {
+    event.preventDefault();
+    meetingRequest = ($("#salesEngineer").serializeArray());
+    console.log(meetingRequest);
 //     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + '"skipValidation": false' + ' }';
 //       $.ajax({
 //         type: "POST",
@@ -52,6 +53,6 @@ $(document).ready( function getCookie () {
 //           card.appendChild(confirmation);
 //           document.getElementById("salesEngineer").appendChild(card);
 //         },
-//     });
+    });
 // });
 
