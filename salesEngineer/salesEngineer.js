@@ -21,8 +21,8 @@ $(document).ready( function getCookie () {
             hsContext.push("hutk=" + utk);
             hsContext.push("pageUrl=" + window.location.href);
             hsContext.push("pageName=" + document.title);
-            // hsContact = encodeURIComponent(JSON.stringify(hsContext));
-            console.log(hsContext);
+            hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            console.log(hsContact);
           break;
         }
         else if (cookieArray2[0] == (" " + "hubspotutk")) {
@@ -30,8 +30,8 @@ $(document).ready( function getCookie () {
             hsContext.push("hutk=" + utk);
             hsContext.push("pageUrl=" + window.location.href);
             hsContext.push("pageName=" + document.title);
-            // hsContact = encodeURIComponent(JSON.stringify(hsContext));
-            console.log(hsContext);
+            hsContact = encodeURIComponent(JSON.stringify(hsContext));
+            console.log(hsContact);
           break;
         };
   }});
