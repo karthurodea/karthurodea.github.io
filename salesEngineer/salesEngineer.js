@@ -18,6 +18,7 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
+            json.stringify(hsContext);
             console.log(hsContext);
           break;
         }
@@ -26,6 +27,7 @@ $(document).ready( function getCookie () {
             hsContext.hutk = utk;
             hsContext.pageUri = window.location.href;
             hsContext.pageName = document.title;
+            json.stringify(hsContext);
             console.log(hsContext);
           break;
         };
