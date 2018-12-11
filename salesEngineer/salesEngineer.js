@@ -21,7 +21,7 @@ $(document).ready( function getCookie () {
             hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
             JSON.stringify(hsContext);
-            // console.log(hsContext);
+            console.log(hsContext);
             console.log(encodeURIComponent(hsContext));
           break;
         }
@@ -31,7 +31,7 @@ $(document).ready( function getCookie () {
             hsContext.pageUrl = window.location.href;
             hsContext.pageName = document.title;
             JSON.stringify(hsContext);
-            // console.log(hsContext);
+            console.log(hsContext);
             console.log(encodeURIComponent(hsContext));
           break;
         };
