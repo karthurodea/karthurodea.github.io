@@ -50,7 +50,7 @@ $("#salesEngineer").submit(function(event) {
     meetingRequest1.push(firstName);
     meetingRequest1.push("&lastname=" + lastName);
     meetingRequest1.push("&email=" + email);
-    block = "firstname=" + encodeURIComponent(JSON.stringify(meetingRequest1));
+    block = "firstname=" + JSON.stringify(meetingRequest1);
     console.log(block + hsContact);
     //   $.ajax({
     //     type: "POST",
