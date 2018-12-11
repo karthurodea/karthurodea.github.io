@@ -27,27 +27,28 @@ $(document).ready( function getCookie () {
             hsContext.pageName = document.title;
           break;
         };
+        console.log(hsContext);
   }});
 
 // on form submit convert data to required format for HubSpot
 // send data through HubSpot Form
 
-$("#salesEngineer").submit(function(event) {
-    event.preventDefault();
-    meetingRequest = ($("#salesEngineer").serializeArray());
-    hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + '"skipValidation": false' + ' }';
-      $.ajax({
-        type: "POST",
-        url: "https://api.hsforms.com/submissions/v3/integration/submit/416460/90d3ce76-0563-4f6a-91f7-e2a0415ad9e9",
-        contentType: "application/json",
-        data: hsContact,
-        success: function(){
-          var card = document.createElement("P");
-          var confirmation = document.createTextNode("Success! Your Request Has Been Submitted!");
-          $("#salesEngineer").empty();
-          card.appendChild(confirmation);
-          document.getElementById("salesEngineer").appendChild(card);
-        },
-    });
-});
+// $("#salesEngineer").submit(function(event) {
+//     event.preventDefault();
+//     meetingRequest = ($("#salesEngineer").serializeArray());
+//     hsContact = '{ "fields": ' + JSON.stringify(meetingRequest) + ', ' + '"context": ' + JSON.stringify(hsContext) + ',' + '"skipValidation": false' + ' }';
+//       $.ajax({
+//         type: "POST",
+//         url: "salesEngineer.php",
+//         contentType: "application/json",
+//         data: hsContact,
+//         success: function(){
+//           var card = document.createElement("P");
+//           var confirmation = document.createTextNode("Success! Your Request Has Been Submitted!");
+//           $("#salesEngineer").empty();
+//           card.appendChild(confirmation);
+//           document.getElementById("salesEngineer").appendChild(card);
+//         },
+//     });
+// });
 
