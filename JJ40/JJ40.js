@@ -57,6 +57,9 @@ function generateMemory() {
  	document.getElementById("container").appendChild(card);
     var border = document.getElementById("container");
     border.classList.add("container");
+    _hsq.push(["trackEvent", {
+        id: "000007052793",
+    }]);
 };
 
 
